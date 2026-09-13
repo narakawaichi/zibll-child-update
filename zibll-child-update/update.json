@@ -1,304 +1,309 @@
 {
   "theme": "zibll-child",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "update_uri": "https://download.hoarfall.cn/zibll-child-update/",
   "requires": "6.1",
   "requires_wp": "6.1",
   "requires_php": "7.4",
   "homepage": "https://nav.hoarfall.cn/",
-  "package": "1.5.4/zibll-child-1.5.4.zip",
-  "package_sha256": "25d750d7cde8aac832b30f6f3d6c4f4774bcf867af8403c7a63b837f6fec86cb",
-  "package_size": 304986,
-  "changelog": "v1.5.4：① 修复启用子主题后，后台 8 个 zibpay 页面（商城中心/订单明细、订单明细旧版、收益分成、推广佣金、商品明细、优惠码、充值卡、提现记录）会打印 include_once 失败警告的问题（新增 zibpay/page 转发垫片，自动跟随父主题升级，不复制父主题任何业务代码）；② 后台品牌横幅作用域收窄，不再覆盖父主题原版「zibll主题设置」面板（该面板恢复原版粉紫渐变 + ZIBLL 水印）；③ 修复 hoarfall-admin-brand 样式表 URL 拼错导致的 404。",
+  "package": "1.5.5/zibll-child-1.5.5.zip",
+  "package_sha256": "2992405ce068bc85148c6bcdcd9830a837d5379ab618aa1e5925d9f530f487ff",
+  "package_size": 308029,
+  "changelog": "v1.5.5：第三方（Google 等）登录自动写入已验证邮箱——修复新用户 user_email 为空、被「强制绑定邮箱」反复弹去绑定页的问题；登录后可直接停在发起登录的页面。含三道安全闸（仅认已验证邮箱 / 邮箱被他人占用不抢绑 / 不覆盖已有邮箱），可用 enable_oauth_auto_email 开关关闭。",
   "files": [
     {
       "path": "assets/css/admin-brand.css",
-      "url": "1.5.4/assets/css/admin-brand.css",
+      "url": "1.5.5/assets/css/admin-brand.css",
       "hash": "506cc6f52fa2a5d40df840f22e2177af297c30e0380e5e8d6f6c5124bba687c9"
     },
     {
       "path": "assets/css/hoarfall-admin.css",
-      "url": "1.5.4/assets/css/hoarfall-admin.css",
+      "url": "1.5.5/assets/css/hoarfall-admin.css",
       "hash": "88de6f3c2d9e7eb935e129f54523b9ab426c185e382161ad971d62bdd980278e"
     },
     {
       "path": "assets/js/theme-switch-cleanup.js",
-      "url": "1.5.4/assets/js/theme-switch-cleanup.js",
+      "url": "1.5.5/assets/js/theme-switch-cleanup.js",
       "hash": "79d7998fb557c1dd4f065a5aec44746de4b97435b17316e5b7188e357d9995d3"
     },
     {
       "path": "functions.php",
-      "url": "1.5.4/functions.php",
+      "url": "1.5.5/functions.php",
       "hash": "0188c047790ffaf81a0a518147cebcee09691b2e8839724edf41b749e565274e"
     },
     {
       "path": "includes/brand-menu.php",
-      "url": "1.5.4/includes/brand-menu.php",
+      "url": "1.5.5/includes/brand-menu.php",
       "hash": "bb362adc44c3a090c55814c96589b1e74abfcfae8dc97b8b98598aac0bc220e0"
     },
     {
       "path": "includes/functions/bing-push.php",
-      "url": "1.5.4/includes/functions/bing-push.php",
+      "url": "1.5.5/includes/functions/bing-push.php",
       "hash": "57bada83451e4ffe9fffb71153404deca9ecc51356e592aae8ab0bd047a076dc"
     },
     {
       "path": "includes/functions/compat-check.php",
-      "url": "1.5.4/includes/functions/compat-check.php",
+      "url": "1.5.5/includes/functions/compat-check.php",
       "hash": "32f46eeb6d98527044d5e1ca9b7b6fff3afec2b23f26462acdf7291ad92cf1d4"
     },
     {
       "path": "includes/functions/functions.php",
-      "url": "1.5.4/includes/functions/functions.php",
+      "url": "1.5.5/includes/functions/functions.php",
       "hash": "4c4d70b7dd4a1dfd3e354abe5297d1218af181ade557dd391a41469f053fda2e"
     },
     {
       "path": "includes/functions/modules-switch.php",
-      "url": "1.5.4/includes/functions/modules-switch.php",
+      "url": "1.5.5/includes/functions/modules-switch.php",
       "hash": "9830fa834b47ac9093b93d2a48b854bb94e5b2381fe58bc1be241e83c11cb898"
     },
     {
+      "path": "includes/functions/oauth-auto-email.php",
+      "url": "1.5.5/includes/functions/oauth-auto-email.php",
+      "hash": "389ff06be5f35b6102b27241ac90d206a2234c8c7da630eb48269196391f8764"
+    },
+    {
       "path": "includes/functions/options-backup.php",
-      "url": "1.5.4/includes/functions/options-backup.php",
+      "url": "1.5.5/includes/functions/options-backup.php",
       "hash": "5063ccadc911045570120f8f39a644a201377e5665942089a5b31fc17da79bc9"
     },
     {
       "path": "includes/functions/theme-options.php",
-      "url": "1.5.4/includes/functions/theme-options.php",
+      "url": "1.5.5/includes/functions/theme-options.php",
       "hash": "9f0893161cc9c6f458d2d9715f9af913572bcbda1346139786ab4960090966fb"
     },
     {
       "path": "includes/functions/theme-uninstall.php",
-      "url": "1.5.4/includes/functions/theme-uninstall.php",
+      "url": "1.5.5/includes/functions/theme-uninstall.php",
       "hash": "2648b5633cd446bf7f943d44acce5bbe55eb0ed6106b3766372e4ddbefd423c8"
     },
     {
       "path": "includes/functions/theme-updater.php",
-      "url": "1.5.4/includes/functions/theme-updater.php",
+      "url": "1.5.5/includes/functions/theme-updater.php",
       "hash": "3b5d9d2ec739c65e4247809fbd4ce416dc5d24551ce72242cfdf864e56925f43"
     },
     {
       "path": "includes/functions/user-export-import.php",
-      "url": "1.5.4/includes/functions/user-export-import.php",
+      "url": "1.5.5/includes/functions/user-export-import.php",
       "hash": "0fbb19568a4daf38edc97c05033d6a30ade0618195f12c7bec77152e579babf1"
     },
     {
       "path": "includes/index.php",
-      "url": "1.5.4/includes/index.php",
-      "hash": "13ffa2cf8da2469047d74cccb8221e59cb9b71a4e196f89b62b644ea1a26cb9e"
+      "url": "1.5.5/includes/index.php",
+      "hash": "75aa36d4aef88ee7bc68b9e2b6009b2115a9de7f4007e0e0ee3fe9a468e6be6c"
     },
     {
       "path": "includes/rating-plugin/assets/css/rating.css",
-      "url": "1.5.4/includes/rating-plugin/assets/css/rating.css",
+      "url": "1.5.5/includes/rating-plugin/assets/css/rating.css",
       "hash": "5c05a01fa967309bcc60797541837c424f3c32d34e4811f6b9384faefb8e5056"
     },
     {
       "path": "includes/rating-plugin/assets/js/rating.js",
-      "url": "1.5.4/includes/rating-plugin/assets/js/rating.js",
+      "url": "1.5.5/includes/rating-plugin/assets/js/rating.js",
       "hash": "5657d6399f46c39b13d18a7d8df0a203226af33c2fcd90a331704987431bd979"
     },
     {
       "path": "includes/rating-plugin/inc/ajax.php",
-      "url": "1.5.4/includes/rating-plugin/inc/ajax.php",
+      "url": "1.5.5/includes/rating-plugin/inc/ajax.php",
       "hash": "16298a1a32bbcd1c78bfbe1a242de0746dc812241ac8b3d0c6e115b23c25bc61"
     },
     {
       "path": "includes/rating-plugin/inc/functions.php",
-      "url": "1.5.4/includes/rating-plugin/inc/functions.php",
+      "url": "1.5.5/includes/rating-plugin/inc/functions.php",
       "hash": "4851b1ba4be34d32f4f4632546587651cda90244ef8f59252a539d371b14f983"
     },
     {
       "path": "includes/rating-plugin/inc/hooks.php",
-      "url": "1.5.4/includes/rating-plugin/inc/hooks.php",
+      "url": "1.5.5/includes/rating-plugin/inc/hooks.php",
       "hash": "d62d19ad4031db3840087be8ae456f69528c383f54fb92eb88eb349e5814f55b"
     },
     {
       "path": "includes/rating-plugin/inc/options.php",
-      "url": "1.5.4/includes/rating-plugin/inc/options.php",
+      "url": "1.5.5/includes/rating-plugin/inc/options.php",
       "hash": "29dfbbc48f2985b0069be1dcc63ff80362242384e0116e31dbb89d0d72d04fd1"
     },
     {
       "path": "includes/rating-plugin/inc/widget.php",
-      "url": "1.5.4/includes/rating-plugin/inc/widget.php",
+      "url": "1.5.5/includes/rating-plugin/inc/widget.php",
       "hash": "2f598daef92d5dbe2c0efc568d3129881a7658718dcac30b6848a41432549240"
     },
     {
       "path": "includes/rating-plugin/zibll-rating-plugin.php",
-      "url": "1.5.4/includes/rating-plugin/zibll-rating-plugin.php",
+      "url": "1.5.5/includes/rating-plugin/zibll-rating-plugin.php",
       "hash": "4b18d8405e8d994b0bda49bc74bc400391bbd327483611008b01bda9e2b72be4"
     },
     {
       "path": "includes/rating-plugin-loader.php",
-      "url": "1.5.4/includes/rating-plugin-loader.php",
+      "url": "1.5.5/includes/rating-plugin-loader.php",
       "hash": "d8bbe3ea9d58013282e1621be3b57bf3f0d8f861db11dc9b109fd0012a040fd2"
     },
     {
       "path": "includes/xiazhi-qz/assets/css/main.min.css",
-      "url": "1.5.4/includes/xiazhi-qz/assets/css/main.min.css",
+      "url": "1.5.5/includes/xiazhi-qz/assets/css/main.min.css",
       "hash": "c35f645eaa35b0b523504ac4a7cfd78d35e3fc96c02f8b1c00c9e500a242b3dc"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/baiyibutie.webp",
-      "url": "1.5.4/includes/xiazhi-qz/assets/img/baiyibutie.webp",
+      "url": "1.5.5/includes/xiazhi-qz/assets/img/baiyibutie.webp",
       "hash": "5a4363b7c03c7a1c24d15a08701bb6d8e0783cdb249a5bbf2229e4f3284ed845"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/dujia.webp",
-      "url": "1.5.4/includes/xiazhi-qz/assets/img/dujia.webp",
+      "url": "1.5.5/includes/xiazhi-qz/assets/img/dujia.webp",
       "hash": "0ca26bf92d5e676d3625981043534ca98a3ae054a939738f709fcd0423bd841d"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/miaosha.webp",
-      "url": "1.5.4/includes/xiazhi-qz/assets/img/miaosha.webp",
+      "url": "1.5.5/includes/xiazhi-qz/assets/img/miaosha.webp",
       "hash": "a3b7fa35af621a585a7ba820678e7468ec83d315a8c89baa74df48d476839892"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/shice.webp",
-      "url": "1.5.4/includes/xiazhi-qz/assets/img/shice.webp",
+      "url": "1.5.5/includes/xiazhi-qz/assets/img/shice.webp",
       "hash": "1119504b386926a21486faf8bf594b0273e2b486ee542c7027e39d73fd6e9f7e"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/shoufa.webp",
-      "url": "1.5.4/includes/xiazhi-qz/assets/img/shoufa.webp",
+      "url": "1.5.5/includes/xiazhi-qz/assets/img/shoufa.webp",
       "hash": "6ec918e9d2988535d70c6a2757da35a2907a4186cf05242a4665d7e4ba1cd0dc"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/temai.webp",
-      "url": "1.5.4/includes/xiazhi-qz/assets/img/temai.webp",
+      "url": "1.5.5/includes/xiazhi-qz/assets/img/temai.webp",
       "hash": "ea5f9c0c778ffe1bf929323d3479206473c9b43c2882dcb98d055a62d10995ba"
     },
     {
       "path": "includes/xiazhi-qz/assets/js/main.min.js",
-      "url": "1.5.4/includes/xiazhi-qz/assets/js/main.min.js",
+      "url": "1.5.5/includes/xiazhi-qz/assets/js/main.min.js",
       "hash": "59fb6b7d73694ec9805a6b36ce357ccce19fa1f1bc3fcd88ba319f82e1761f01"
     },
     {
       "path": "includes/xiazhi-qz/inc/functions.php",
-      "url": "1.5.4/includes/xiazhi-qz/inc/functions.php",
+      "url": "1.5.5/includes/xiazhi-qz/inc/functions.php",
       "hash": "6c4bec38ee95a6ff6c6934c7bbe7009f50fc3264ef9ef0315cabd31afaafd148"
     },
     {
       "path": "includes/xiazhi-qz/inc/options.php",
-      "url": "1.5.4/includes/xiazhi-qz/inc/options.php",
+      "url": "1.5.5/includes/xiazhi-qz/inc/options.php",
       "hash": "7d6a7d4be533663684796c0e8c5ec961d156ed7a944ec2e5815633354c7c85ea"
     },
     {
       "path": "includes/xiazhi-qz/inc/widget.php",
-      "url": "1.5.4/includes/xiazhi-qz/inc/widget.php",
+      "url": "1.5.5/includes/xiazhi-qz/inc/widget.php",
       "hash": "da84a9c5a9a651c2f05aeafe2719a1aeaf0b8011128a546fef81368aab50dd72"
     },
     {
       "path": "includes/xiazhi-qz/uninstall.php",
-      "url": "1.5.4/includes/xiazhi-qz/uninstall.php",
+      "url": "1.5.5/includes/xiazhi-qz/uninstall.php",
       "hash": "7a1e04ebf20656ad19e550e13b7ca39eed1840378ee17248b5c5632e0dc5cf1c"
     },
     {
       "path": "includes/xiazhi-qz/xiazhi_qz.php",
-      "url": "1.5.4/includes/xiazhi-qz/xiazhi_qz.php",
+      "url": "1.5.5/includes/xiazhi-qz/xiazhi_qz.php",
       "hash": "e6e1183cc98f66cf1d802b7a256f83a467a5fb355ebebe1e5e37756a7fae0257"
     },
     {
       "path": "includes/xiazhi-qz-loader.php",
-      "url": "1.5.4/includes/xiazhi-qz-loader.php",
+      "url": "1.5.5/includes/xiazhi-qz-loader.php",
       "hash": "f3bb745c6894f9ea821a834d03976c2bea8150c3825f406cc39883f8c900c3aa"
     },
     {
       "path": "includes/zibll-comment-emoji/assets/css/admin.css",
-      "url": "1.5.4/includes/zibll-comment-emoji/assets/css/admin.css",
+      "url": "1.5.5/includes/zibll-comment-emoji/assets/css/admin.css",
       "hash": "5f31f89483d34a4fab2f4a16f64729ce51cc69322c406e6bf00ad2b684b30ccb"
     },
     {
       "path": "includes/zibll-comment-emoji/assets/css/main.css",
-      "url": "1.5.4/includes/zibll-comment-emoji/assets/css/main.css",
+      "url": "1.5.5/includes/zibll-comment-emoji/assets/css/main.css",
       "hash": "e10d2cd70393affbce22590f287606c9e9e32115fcdea5566b8d667b18e5a0d1"
     },
     {
       "path": "includes/zibll-comment-emoji/assets/js/admin.js",
-      "url": "1.5.4/includes/zibll-comment-emoji/assets/js/admin.js",
+      "url": "1.5.5/includes/zibll-comment-emoji/assets/js/admin.js",
       "hash": "52672382323e4b8f5ae6adc132b1ea60351b9bf6c47bca0795e5ec4ab5e2c3fd"
     },
     {
       "path": "includes/zibll-comment-emoji/assets/js/main.js",
-      "url": "1.5.4/includes/zibll-comment-emoji/assets/js/main.js",
+      "url": "1.5.5/includes/zibll-comment-emoji/assets/js/main.js",
       "hash": "39128e527ce8bfa2430b79a481c51eaa215d997ff3d1d771c3e0fcad71d2cfaf"
     },
     {
       "path": "includes/zibll-comment-emoji/inc/functions.php",
-      "url": "1.5.4/includes/zibll-comment-emoji/inc/functions.php",
+      "url": "1.5.5/includes/zibll-comment-emoji/inc/functions.php",
       "hash": "8a8e76956db7430f0c453a3afbc9ea271b576be845f592c62a0e08a3a630b4a3"
     },
     {
       "path": "includes/zibll-comment-emoji/inc/options.php",
-      "url": "1.5.4/includes/zibll-comment-emoji/inc/options.php",
+      "url": "1.5.5/includes/zibll-comment-emoji/inc/options.php",
       "hash": "59a6a41391aa268b5b16bb86f299cf9bf971a6609ca80a7b78319ea6b16ed318"
     },
     {
       "path": "includes/zibll-comment-emoji/zibll-comment-emoji.php",
-      "url": "1.5.4/includes/zibll-comment-emoji/zibll-comment-emoji.php",
+      "url": "1.5.5/includes/zibll-comment-emoji/zibll-comment-emoji.php",
       "hash": "ff67b8bdde42f4ebb37aa5ebaeb1bdfbc22db41d1250ffd1c8bb7a6e673638dd"
     },
     {
       "path": "includes/zibll-comment-emoji-loader.php",
-      "url": "1.5.4/includes/zibll-comment-emoji-loader.php",
+      "url": "1.5.5/includes/zibll-comment-emoji-loader.php",
       "hash": "70fd5de297f70be0fe3edcf02a39ffc3abfaddf03cd480e1712128b3f4b8325c"
     },
     {
       "path": "js/console-filter.js",
-      "url": "1.5.4/js/console-filter.js",
+      "url": "1.5.5/js/console-filter.js",
       "hash": "582b74e4040748a13ad8ba8435467ae6fbabba0120c4ad999cefb345cacdaa7e"
     },
     {
       "path": "screenshot.jpg",
-      "url": "1.5.4/screenshot.jpg",
+      "url": "1.5.5/screenshot.jpg",
       "hash": "e98c75f3fc1b0363a289dfb69fb16f3123f2a4595257fd70cdfd530cdaa0a954"
     },
     {
       "path": "zibpay/index.php",
-      "url": "1.5.4/zibpay/index.php",
+      "url": "1.5.5/zibpay/index.php",
       "hash": "8bc1530674ae3f74c2c450b8ef2d4c9c1081e718ab7f804096b4c1917e59d7b9"
     },
     {
       "path": "zibpay/page/charge-card.php",
-      "url": "1.5.4/zibpay/page/charge-card.php",
+      "url": "1.5.5/zibpay/page/charge-card.php",
       "hash": "78bd2541ac8ac75779c6c86934e0eb9b1f422485b5c5d13a0ee5fd58392a962d"
     },
     {
       "path": "zibpay/page/coupon.php",
-      "url": "1.5.4/zibpay/page/coupon.php",
+      "url": "1.5.5/zibpay/page/coupon.php",
       "hash": "732edda58f287fc0e6de4d37607245531f70ad3284b782c1b16ac2de70768035"
     },
     {
       "path": "zibpay/page/income.php",
-      "url": "1.5.4/zibpay/page/income.php",
+      "url": "1.5.5/zibpay/page/income.php",
       "hash": "06f5e443c3def529054c917b62167601353b8cbdaf3efc38b578553ef5545f09"
     },
     {
       "path": "zibpay/page/index.php",
-      "url": "1.5.4/zibpay/page/index.php",
+      "url": "1.5.5/zibpay/page/index.php",
       "hash": "8bc1530674ae3f74c2c450b8ef2d4c9c1081e718ab7f804096b4c1917e59d7b9"
     },
     {
       "path": "zibpay/page/order.php",
-      "url": "1.5.4/zibpay/page/order.php",
+      "url": "1.5.5/zibpay/page/order.php",
       "hash": "1160b67432dfd07472075948283774e7c0efb59d6a36bf4d0d88e317ecb1659b"
     },
     {
       "path": "zibpay/page/product.php",
-      "url": "1.5.4/zibpay/page/product.php",
+      "url": "1.5.5/zibpay/page/product.php",
       "hash": "3b01cd72dc3edd14b4ee56686877aac02e5d8869c0dc54f87f70ed9acaf00d2a"
     },
     {
       "path": "zibpay/page/rebate.php",
-      "url": "1.5.4/zibpay/page/rebate.php",
+      "url": "1.5.5/zibpay/page/rebate.php",
       "hash": "195e16ea30c25285fda99a239165a5ab910e8ba5ce8fd1dc7cefc5bb42e4d52b"
     },
     {
       "path": "zibpay/page/shop.php",
-      "url": "1.5.4/zibpay/page/shop.php",
+      "url": "1.5.5/zibpay/page/shop.php",
       "hash": "fc63ecf0c3b0b315e57957bf3965c9456fcd2bd041a435676a98f1b529dca124"
     },
     {
       "path": "zibpay/page/withdraw.php",
-      "url": "1.5.4/zibpay/page/withdraw.php",
+      "url": "1.5.5/zibpay/page/withdraw.php",
       "hash": "dfcd142b32c973d091a11f4b4fa82835a1187e1a7b1d4741424d33dcabeac30f"
     }
   ]

@@ -1,359 +1,364 @@
 {
   "theme": "zibll-child",
-  "version": "1.5.18",
+  "version": "1.5.19",
   "update_uri": "https://download.hoarfall.cn/zibll-child-update/",
   "requires": "6.1",
   "requires_wp": "6.1",
   "requires_php": "7.4",
   "homepage": "https://nav.hoarfall.cn/",
-  "package": "1.5.18/zibll-child-1.5.18.zip",
-  "package_sha256": "f0d4e107f40dd875a602ce4ff727d548281fc9ab838099cca64db5599cf2f463",
-  "package_size": 377943,
-  "changelog": "v1.5.18：修复爱发电支付被误判「未配置」的回归 —— 1.5.16 起user_id/plan_id 被限定为纯十六进制、api_base 禁止含子域路径，导致 mch_ 前缀 ID 与 ifdian-pay 子域等合法配置被静默清空、收银台不显示爱发电；现改为安全字符白名单",
+  "package": "1.5.19/zibll-child-1.5.19.zip",
+  "package_sha256": "e9164cc7830e23df8a8fc9ae43196ff2e21e858527427631c82ee4f1e113bf53",
+  "package_size": 381152,
+  "changelog": "v1.5.19：爱发电支付改为新窗口打开 —— 父主题 pay.js 原为同标签跳转（window.location.href），付款后用户找不回站；新增子主题拦截脚本监听 zib_ajax.success 事件，改写为 target=_blank 表单新窗口提交，站内支付页保持不动；保留 open_url 兜底，脚本失效时退化为原行为不卡死",
   "files": [
     {
       "path": "afdian-notify.php",
-      "url": "1.5.18/afdian-notify.php",
+      "url": "1.5.19/afdian-notify.php",
       "hash": "3d590faefaa4c4b901f64b19f8249f6f0666ae2ce13a29cdff8871fd5078e1a8"
     },
     {
       "path": "assets/css/admin-brand.css",
-      "url": "1.5.18/assets/css/admin-brand.css",
+      "url": "1.5.19/assets/css/admin-brand.css",
       "hash": "506cc6f52fa2a5d40df840f22e2177af297c30e0380e5e8d6f6c5124bba687c9"
     },
     {
       "path": "assets/css/hoarfall-admin.css",
-      "url": "1.5.18/assets/css/hoarfall-admin.css",
+      "url": "1.5.19/assets/css/hoarfall-admin.css",
       "hash": "88de6f3c2d9e7eb935e129f54523b9ab426c185e382161ad971d62bdd980278e"
     },
     {
       "path": "assets/css/msg-popup.css",
-      "url": "1.5.18/assets/css/msg-popup.css",
+      "url": "1.5.19/assets/css/msg-popup.css",
       "hash": "7a2f3b5598cce950402d866b5588ad9b8cf3b67daccc8cf6fc850d325a2457d3"
     },
     {
+      "path": "assets/js/afdian-pay-window.js",
+      "url": "1.5.19/assets/js/afdian-pay-window.js",
+      "hash": "a1a0ad7a3cb3992b804f561707b9d0143d60597def9656b11f98f867efdad626"
+    },
+    {
       "path": "assets/js/msg-popup.js",
-      "url": "1.5.18/assets/js/msg-popup.js",
+      "url": "1.5.19/assets/js/msg-popup.js",
       "hash": "0ed4bad864c647fa388971c79a0c74f06fe62c67709848172df9c4da361f4dba"
     },
     {
       "path": "assets/js/theme-switch-cleanup.js",
-      "url": "1.5.18/assets/js/theme-switch-cleanup.js",
+      "url": "1.5.19/assets/js/theme-switch-cleanup.js",
       "hash": "8fc7530bac1ac2140119b8db5de90ea1a3ab91a93dff17cdbb706c4a7bdddf22"
     },
     {
       "path": "assets/js/user-box.js",
-      "url": "1.5.18/assets/js/user-box.js",
+      "url": "1.5.19/assets/js/user-box.js",
       "hash": "59386bb2bc08fc301bf541fa2497f9c72d2f8614b23cff6ca19ea50e8550307a"
     },
     {
       "path": "avatar-proxy.php",
-      "url": "1.5.18/avatar-proxy.php",
+      "url": "1.5.19/avatar-proxy.php",
       "hash": "cf0ccc054724cfb5ba58263ff835ea5f2d0816470b34b14444d67f92766fcb3d"
     },
     {
       "path": "functions.php",
-      "url": "1.5.18/functions.php",
+      "url": "1.5.19/functions.php",
       "hash": "0188c047790ffaf81a0a518147cebcee09691b2e8839724edf41b749e565274e"
     },
     {
       "path": "includes/brand-menu.php",
-      "url": "1.5.18/includes/brand-menu.php",
+      "url": "1.5.19/includes/brand-menu.php",
       "hash": "cba44749bec557575327f3a0ca54b839a9c15f41f3110ff2812c0c21bfc8c155"
     },
     {
       "path": "includes/functions/afdian-pay.php",
-      "url": "1.5.18/includes/functions/afdian-pay.php",
-      "hash": "154eb1513fcaccbf6ac2cbddddde8ef4c9756fd841fbc201d4ee5d9b7c069d62"
+      "url": "1.5.19/includes/functions/afdian-pay.php",
+      "hash": "8820778118b9e1963191afafad39bd01a93eb58246a3763f04ec5d0f77f916f6"
     },
     {
       "path": "includes/functions/bing-push.php",
-      "url": "1.5.18/includes/functions/bing-push.php",
+      "url": "1.5.19/includes/functions/bing-push.php",
       "hash": "57bada83451e4ffe9fffb71153404deca9ecc51356e592aae8ab0bd047a076dc"
     },
     {
       "path": "includes/functions/compat-check.php",
-      "url": "1.5.18/includes/functions/compat-check.php",
+      "url": "1.5.19/includes/functions/compat-check.php",
       "hash": "813618ca80bbaae6284ef65ce46a7d827475803526684dce87c59ceaa1942352"
     },
     {
       "path": "includes/functions/functions.php",
-      "url": "1.5.18/includes/functions/functions.php",
+      "url": "1.5.19/includes/functions/functions.php",
       "hash": "ec97da65f17d3f9cda8e9275d1d410781e4317efb2854c82d052516b78874df3"
     },
     {
       "path": "includes/functions/google-avatar-proxy.php",
-      "url": "1.5.18/includes/functions/google-avatar-proxy.php",
+      "url": "1.5.19/includes/functions/google-avatar-proxy.php",
       "hash": "554cd2671c9980ca3d80e28570e025a7c21d10b7d5387a817db0533c111935a1"
     },
     {
       "path": "includes/functions/modules-switch.php",
-      "url": "1.5.18/includes/functions/modules-switch.php",
+      "url": "1.5.19/includes/functions/modules-switch.php",
       "hash": "9830fa834b47ac9093b93d2a48b854bb94e5b2381fe58bc1be241e83c11cb898"
     },
     {
       "path": "includes/functions/msg-popup.php",
-      "url": "1.5.18/includes/functions/msg-popup.php",
+      "url": "1.5.19/includes/functions/msg-popup.php",
       "hash": "6834deea509b6e9639b84e3833da880cb8fe0c6e3a95aadbd37af44eee4974f4"
     },
     {
       "path": "includes/functions/oauth-auto-email.php",
-      "url": "1.5.18/includes/functions/oauth-auto-email.php",
+      "url": "1.5.19/includes/functions/oauth-auto-email.php",
       "hash": "2e17abc84d0ed8d73b4b4c72df6b402ac092e2636cd30568547c0b894bc47f66"
     },
     {
       "path": "includes/functions/options-backup.php",
-      "url": "1.5.18/includes/functions/options-backup.php",
+      "url": "1.5.19/includes/functions/options-backup.php",
       "hash": "a4ef89b1a1cab3ae95d25f4d77023e2fc765cf773468aecfb69ce53af11a8fb3"
     },
     {
       "path": "includes/functions/theme-options.php",
-      "url": "1.5.18/includes/functions/theme-options.php",
+      "url": "1.5.19/includes/functions/theme-options.php",
       "hash": "1a7d09730cf03f62498c4d4fc8564d1cb892da59324f50e9a911c2c5e8d2c054"
     },
     {
       "path": "includes/functions/theme-uninstall.php",
-      "url": "1.5.18/includes/functions/theme-uninstall.php",
+      "url": "1.5.19/includes/functions/theme-uninstall.php",
       "hash": "d2f23a4c2e3fa253967abcc535e31ff8bca66d4eb756cf997294f587377eb1d7"
     },
     {
       "path": "includes/functions/theme-updater.php",
-      "url": "1.5.18/includes/functions/theme-updater.php",
+      "url": "1.5.19/includes/functions/theme-updater.php",
       "hash": "9a72281dfcdf6e131d610362935da6cb34ba91a20bc17885038daaa3ba809038"
     },
     {
       "path": "includes/functions/user-box.php",
-      "url": "1.5.18/includes/functions/user-box.php",
+      "url": "1.5.19/includes/functions/user-box.php",
       "hash": "44d90c77a92d1022c64ba5c37e22c3a20cf8436e071ac08b6ea67c8d60c8f776"
     },
     {
       "path": "includes/functions/user-export-import.php",
-      "url": "1.5.18/includes/functions/user-export-import.php",
+      "url": "1.5.19/includes/functions/user-export-import.php",
       "hash": "aef2e382bedcf85d6cd68113d6ab7036523987bb8ac0d24399d827554620f68e"
     },
     {
       "path": "includes/inc/user-box-presets.php",
-      "url": "1.5.18/includes/inc/user-box-presets.php",
+      "url": "1.5.19/includes/inc/user-box-presets.php",
       "hash": "e7b08d2fdd91f186d3fd51e035e98cd60a0f4bc4a8192e093bc3914ce1f9f7b6"
     },
     {
       "path": "includes/index.php",
-      "url": "1.5.18/includes/index.php",
+      "url": "1.5.19/includes/index.php",
       "hash": "fe37449cbfdbf3a1a261a38a2aec9c79c43cddedf21141d92e0a80cec4e90647"
     },
     {
       "path": "includes/rating-plugin/assets/css/rating.css",
-      "url": "1.5.18/includes/rating-plugin/assets/css/rating.css",
+      "url": "1.5.19/includes/rating-plugin/assets/css/rating.css",
       "hash": "5c05a01fa967309bcc60797541837c424f3c32d34e4811f6b9384faefb8e5056"
     },
     {
       "path": "includes/rating-plugin/assets/js/rating.js",
-      "url": "1.5.18/includes/rating-plugin/assets/js/rating.js",
+      "url": "1.5.19/includes/rating-plugin/assets/js/rating.js",
       "hash": "5657d6399f46c39b13d18a7d8df0a203226af33c2fcd90a331704987431bd979"
     },
     {
       "path": "includes/rating-plugin/inc/ajax.php",
-      "url": "1.5.18/includes/rating-plugin/inc/ajax.php",
+      "url": "1.5.19/includes/rating-plugin/inc/ajax.php",
       "hash": "25da936ee93ce9d9cba3997aae9f8eeb4a479f31e2b52ce114a59336e5d20e65"
     },
     {
       "path": "includes/rating-plugin/inc/functions.php",
-      "url": "1.5.18/includes/rating-plugin/inc/functions.php",
+      "url": "1.5.19/includes/rating-plugin/inc/functions.php",
       "hash": "65e2247c7a66141ed0d4a5f5b61f5b9b0e3ce40f4675290774f7c905a4dc8787"
     },
     {
       "path": "includes/rating-plugin/inc/hooks.php",
-      "url": "1.5.18/includes/rating-plugin/inc/hooks.php",
+      "url": "1.5.19/includes/rating-plugin/inc/hooks.php",
       "hash": "d62d19ad4031db3840087be8ae456f69528c383f54fb92eb88eb349e5814f55b"
     },
     {
       "path": "includes/rating-plugin/inc/options.php",
-      "url": "1.5.18/includes/rating-plugin/inc/options.php",
+      "url": "1.5.19/includes/rating-plugin/inc/options.php",
       "hash": "29dfbbc48f2985b0069be1dcc63ff80362242384e0116e31dbb89d0d72d04fd1"
     },
     {
       "path": "includes/rating-plugin/inc/widget.php",
-      "url": "1.5.18/includes/rating-plugin/inc/widget.php",
+      "url": "1.5.19/includes/rating-plugin/inc/widget.php",
       "hash": "928c9b98bbc51134349548136a543564eb5e72495f7bc1cbc1b4dcd96162fbda"
     },
     {
       "path": "includes/rating-plugin/zibll-rating-plugin.php",
-      "url": "1.5.18/includes/rating-plugin/zibll-rating-plugin.php",
+      "url": "1.5.19/includes/rating-plugin/zibll-rating-plugin.php",
       "hash": "0a0edb80f1e9e11fa349fcbb6d18bc4ac9586b0155cdabb58913e1dddd2cb963"
     },
     {
       "path": "includes/rating-plugin-loader.php",
-      "url": "1.5.18/includes/rating-plugin-loader.php",
+      "url": "1.5.19/includes/rating-plugin-loader.php",
       "hash": "d8bbe3ea9d58013282e1621be3b57bf3f0d8f861db11dc9b109fd0012a040fd2"
     },
     {
       "path": "includes/xiazhi-qz/assets/css/main.min.css",
-      "url": "1.5.18/includes/xiazhi-qz/assets/css/main.min.css",
+      "url": "1.5.19/includes/xiazhi-qz/assets/css/main.min.css",
       "hash": "c35f645eaa35b0b523504ac4a7cfd78d35e3fc96c02f8b1c00c9e500a242b3dc"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/baiyibutie.webp",
-      "url": "1.5.18/includes/xiazhi-qz/assets/img/baiyibutie.webp",
+      "url": "1.5.19/includes/xiazhi-qz/assets/img/baiyibutie.webp",
       "hash": "5a4363b7c03c7a1c24d15a08701bb6d8e0783cdb249a5bbf2229e4f3284ed845"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/dujia.webp",
-      "url": "1.5.18/includes/xiazhi-qz/assets/img/dujia.webp",
+      "url": "1.5.19/includes/xiazhi-qz/assets/img/dujia.webp",
       "hash": "0ca26bf92d5e676d3625981043534ca98a3ae054a939738f709fcd0423bd841d"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/miaosha.webp",
-      "url": "1.5.18/includes/xiazhi-qz/assets/img/miaosha.webp",
+      "url": "1.5.19/includes/xiazhi-qz/assets/img/miaosha.webp",
       "hash": "a3b7fa35af621a585a7ba820678e7468ec83d315a8c89baa74df48d476839892"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/shice.webp",
-      "url": "1.5.18/includes/xiazhi-qz/assets/img/shice.webp",
+      "url": "1.5.19/includes/xiazhi-qz/assets/img/shice.webp",
       "hash": "1119504b386926a21486faf8bf594b0273e2b486ee542c7027e39d73fd6e9f7e"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/shoufa.webp",
-      "url": "1.5.18/includes/xiazhi-qz/assets/img/shoufa.webp",
+      "url": "1.5.19/includes/xiazhi-qz/assets/img/shoufa.webp",
       "hash": "6ec918e9d2988535d70c6a2757da35a2907a4186cf05242a4665d7e4ba1cd0dc"
     },
     {
       "path": "includes/xiazhi-qz/assets/img/temai.webp",
-      "url": "1.5.18/includes/xiazhi-qz/assets/img/temai.webp",
+      "url": "1.5.19/includes/xiazhi-qz/assets/img/temai.webp",
       "hash": "ea5f9c0c778ffe1bf929323d3479206473c9b43c2882dcb98d055a62d10995ba"
     },
     {
       "path": "includes/xiazhi-qz/assets/js/main.min.js",
-      "url": "1.5.18/includes/xiazhi-qz/assets/js/main.min.js",
+      "url": "1.5.19/includes/xiazhi-qz/assets/js/main.min.js",
       "hash": "59fb6b7d73694ec9805a6b36ce357ccce19fa1f1bc3fcd88ba319f82e1761f01"
     },
     {
       "path": "includes/xiazhi-qz/inc/functions.php",
-      "url": "1.5.18/includes/xiazhi-qz/inc/functions.php",
+      "url": "1.5.19/includes/xiazhi-qz/inc/functions.php",
       "hash": "7da4cc238aeb71b6cb17d49b8f5b4e9d7f4653b00231869c7cbb6b37a940b868"
     },
     {
       "path": "includes/xiazhi-qz/inc/options.php",
-      "url": "1.5.18/includes/xiazhi-qz/inc/options.php",
+      "url": "1.5.19/includes/xiazhi-qz/inc/options.php",
       "hash": "7d6a7d4be533663684796c0e8c5ec961d156ed7a944ec2e5815633354c7c85ea"
     },
     {
       "path": "includes/xiazhi-qz/inc/widget.php",
-      "url": "1.5.18/includes/xiazhi-qz/inc/widget.php",
+      "url": "1.5.19/includes/xiazhi-qz/inc/widget.php",
       "hash": "da84a9c5a9a651c2f05aeafe2719a1aeaf0b8011128a546fef81368aab50dd72"
     },
     {
       "path": "includes/xiazhi-qz/uninstall.php",
-      "url": "1.5.18/includes/xiazhi-qz/uninstall.php",
+      "url": "1.5.19/includes/xiazhi-qz/uninstall.php",
       "hash": "7a1e04ebf20656ad19e550e13b7ca39eed1840378ee17248b5c5632e0dc5cf1c"
     },
     {
       "path": "includes/xiazhi-qz/xiazhi_qz.php",
-      "url": "1.5.18/includes/xiazhi-qz/xiazhi_qz.php",
+      "url": "1.5.19/includes/xiazhi-qz/xiazhi_qz.php",
       "hash": "e6e1183cc98f66cf1d802b7a256f83a467a5fb355ebebe1e5e37756a7fae0257"
     },
     {
       "path": "includes/xiazhi-qz-loader.php",
-      "url": "1.5.18/includes/xiazhi-qz-loader.php",
+      "url": "1.5.19/includes/xiazhi-qz-loader.php",
       "hash": "f3bb745c6894f9ea821a834d03976c2bea8150c3825f406cc39883f8c900c3aa"
     },
     {
       "path": "includes/zibll-comment-emoji/assets/css/admin.css",
-      "url": "1.5.18/includes/zibll-comment-emoji/assets/css/admin.css",
+      "url": "1.5.19/includes/zibll-comment-emoji/assets/css/admin.css",
       "hash": "5f31f89483d34a4fab2f4a16f64729ce51cc69322c406e6bf00ad2b684b30ccb"
     },
     {
       "path": "includes/zibll-comment-emoji/assets/css/main.css",
-      "url": "1.5.18/includes/zibll-comment-emoji/assets/css/main.css",
+      "url": "1.5.19/includes/zibll-comment-emoji/assets/css/main.css",
       "hash": "e10d2cd70393affbce22590f287606c9e9e32115fcdea5566b8d667b18e5a0d1"
     },
     {
       "path": "includes/zibll-comment-emoji/assets/js/admin.js",
-      "url": "1.5.18/includes/zibll-comment-emoji/assets/js/admin.js",
+      "url": "1.5.19/includes/zibll-comment-emoji/assets/js/admin.js",
       "hash": "52672382323e4b8f5ae6adc132b1ea60351b9bf6c47bca0795e5ec4ab5e2c3fd"
     },
     {
       "path": "includes/zibll-comment-emoji/assets/js/main.js",
-      "url": "1.5.18/includes/zibll-comment-emoji/assets/js/main.js",
+      "url": "1.5.19/includes/zibll-comment-emoji/assets/js/main.js",
       "hash": "39128e527ce8bfa2430b79a481c51eaa215d997ff3d1d771c3e0fcad71d2cfaf"
     },
     {
       "path": "includes/zibll-comment-emoji/inc/functions.php",
-      "url": "1.5.18/includes/zibll-comment-emoji/inc/functions.php",
+      "url": "1.5.19/includes/zibll-comment-emoji/inc/functions.php",
       "hash": "d730b333e05fcc7c6fe03486557e1099cd560098f67aa39db1827da0f0217df9"
     },
     {
       "path": "includes/zibll-comment-emoji/inc/options.php",
-      "url": "1.5.18/includes/zibll-comment-emoji/inc/options.php",
+      "url": "1.5.19/includes/zibll-comment-emoji/inc/options.php",
       "hash": "59a6a41391aa268b5b16bb86f299cf9bf971a6609ca80a7b78319ea6b16ed318"
     },
     {
       "path": "includes/zibll-comment-emoji/zibll-comment-emoji.php",
-      "url": "1.5.18/includes/zibll-comment-emoji/zibll-comment-emoji.php",
+      "url": "1.5.19/includes/zibll-comment-emoji/zibll-comment-emoji.php",
       "hash": "ff67b8bdde42f4ebb37aa5ebaeb1bdfbc22db41d1250ffd1c8bb7a6e673638dd"
     },
     {
       "path": "includes/zibll-comment-emoji-loader.php",
-      "url": "1.5.18/includes/zibll-comment-emoji-loader.php",
+      "url": "1.5.19/includes/zibll-comment-emoji-loader.php",
       "hash": "70fd5de297f70be0fe3edcf02a39ffc3abfaddf03cd480e1712128b3f4b8325c"
     },
     {
       "path": "js/console-filter.js",
-      "url": "1.5.18/js/console-filter.js",
+      "url": "1.5.19/js/console-filter.js",
       "hash": "582b74e4040748a13ad8ba8435467ae6fbabba0120c4ad999cefb345cacdaa7e"
     },
     {
       "path": "screenshot.jpg",
-      "url": "1.5.18/screenshot.jpg",
+      "url": "1.5.19/screenshot.jpg",
       "hash": "e98c75f3fc1b0363a289dfb69fb16f3123f2a4595257fd70cdfd530cdaa0a954"
     },
     {
       "path": "zibpay/index.php",
-      "url": "1.5.18/zibpay/index.php",
+      "url": "1.5.19/zibpay/index.php",
       "hash": "8bc1530674ae3f74c2c450b8ef2d4c9c1081e718ab7f804096b4c1917e59d7b9"
     },
     {
       "path": "zibpay/page/charge-card.php",
-      "url": "1.5.18/zibpay/page/charge-card.php",
+      "url": "1.5.19/zibpay/page/charge-card.php",
       "hash": "78bd2541ac8ac75779c6c86934e0eb9b1f422485b5c5d13a0ee5fd58392a962d"
     },
     {
       "path": "zibpay/page/coupon.php",
-      "url": "1.5.18/zibpay/page/coupon.php",
+      "url": "1.5.19/zibpay/page/coupon.php",
       "hash": "732edda58f287fc0e6de4d37607245531f70ad3284b782c1b16ac2de70768035"
     },
     {
       "path": "zibpay/page/income.php",
-      "url": "1.5.18/zibpay/page/income.php",
+      "url": "1.5.19/zibpay/page/income.php",
       "hash": "06f5e443c3def529054c917b62167601353b8cbdaf3efc38b578553ef5545f09"
     },
     {
       "path": "zibpay/page/index.php",
-      "url": "1.5.18/zibpay/page/index.php",
+      "url": "1.5.19/zibpay/page/index.php",
       "hash": "2e694ec4ea7df4480c6f19ba9cfa1d09d116f79a7f1b220d92a0c878a552a2e4"
     },
     {
       "path": "zibpay/page/order.php",
-      "url": "1.5.18/zibpay/page/order.php",
+      "url": "1.5.19/zibpay/page/order.php",
       "hash": "1160b67432dfd07472075948283774e7c0efb59d6a36bf4d0d88e317ecb1659b"
     },
     {
       "path": "zibpay/page/product.php",
-      "url": "1.5.18/zibpay/page/product.php",
+      "url": "1.5.19/zibpay/page/product.php",
       "hash": "3b01cd72dc3edd14b4ee56686877aac02e5d8869c0dc54f87f70ed9acaf00d2a"
     },
     {
       "path": "zibpay/page/rebate.php",
-      "url": "1.5.18/zibpay/page/rebate.php",
+      "url": "1.5.19/zibpay/page/rebate.php",
       "hash": "195e16ea30c25285fda99a239165a5ab910e8ba5ce8fd1dc7cefc5bb42e4d52b"
     },
     {
       "path": "zibpay/page/shop.php",
-      "url": "1.5.18/zibpay/page/shop.php",
+      "url": "1.5.19/zibpay/page/shop.php",
       "hash": "fc63ecf0c3b0b315e57957bf3965c9456fcd2bd041a435676a98f1b529dca124"
     },
     {
       "path": "zibpay/page/withdraw.php",
-      "url": "1.5.18/zibpay/page/withdraw.php",
+      "url": "1.5.19/zibpay/page/withdraw.php",
       "hash": "dfcd142b32c973d091a11f4b4fa82835a1187e1a7b1d4741424d33dcabeac30f"
     }
   ]

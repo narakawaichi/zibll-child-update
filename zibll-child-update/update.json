@@ -7,8 +7,8 @@
   "requires_php": "7.4",
   "homepage": "https://nav.hoarfall.cn/",
   "package": "1.9.0/zibll-child-1.9.0.zip",
-  "package_sha256": "9fbb60b69ad23e128e4ebe730789040bd713e53763e9b49509e642033c97ec73",
-  "package_size": 894072,
+  "package_sha256": "724bcd4e007a3e095d3e9977e17dc3cf8829d763c84ef2a18b017d1b8bac6372",
+  "package_size": 867474,
   "changelog": "v1.9.0：新增「私信实时推送」模块——双方打开私信窗口后即可真正实时收到消息：气泡当场出现、左侧会话列表与未读状态实时刷新、对方看过之后「已读」自动消失，全程无需刷新。走独立推送服务的 WebSocket 长连接，不占用 WordPress 的 PHP 进程；连不上时自动降级为轮询，不会丢消息。默认关闭：需在后台「私信实时推送」分组填写推送服务地址与共享密钥后开启；不开启时前台零脚本、零请求，行为与原来完全一致。",
   "files": [
     {
@@ -242,11 +242,6 @@
       "hash": "3ab9626c8660be1addba0fef28fdb5f92c244b1103c30059a9010e9fbca192ed"
     },
     {
-      "path": "includes/functions/theme-options.php.bak-pplocal-20261027103652",
-      "url": "1.9.0/includes/functions/theme-options.php.bak-pplocal-20261027103652",
-      "hash": "02a834947178884681c804fcda0ffac66208d61eca2b7b34ce08a78b65e3ca7e"
-    },
-    {
       "path": "includes/functions/theme-uninstall.php",
       "url": "1.9.0/includes/functions/theme-uninstall.php",
       "hash": "d2f23a4c2e3fa253967abcc535e31ff8bca66d4eb756cf997294f587377eb1d7"
@@ -275,11 +270,6 @@
       "path": "includes/index.php",
       "url": "1.9.0/includes/index.php",
       "hash": "f8f6d35502f0f10b85218ebb3f1fa6470318f4eb6bd429fc7578e480e10e5442"
-    },
-    {
-      "path": "includes/index.php.bak-pplocal-20261027103652",
-      "url": "1.9.0/includes/index.php.bak-pplocal-20261027103652",
-      "hash": "48d808ba03eed15ef4536d6c7df0325f15e1069b55ff5f11091fe4cd29a65384"
     },
     {
       "path": "includes/rating-plugin/assets/css/rating.css",

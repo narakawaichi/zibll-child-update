@@ -7,8 +7,8 @@
   "requires_php": "7.4",
   "homepage": "https://nav.hoarfall.cn/",
   "package": "1.9.0/zibll-child-1.9.0.zip",
-  "package_sha256": "724bcd4e007a3e095d3e9977e17dc3cf8829d763c84ef2a18b017d1b8bac6372",
-  "package_size": 867474,
+  "package_sha256": "cdb3cd72adbf775a97d19cf1f82212280de8c995ff42d511e95292c5ea0c5f47",
+  "package_size": 868010,
   "changelog": "v1.9.0：新增「私信实时推送」模块——双方打开私信窗口后即可真正实时收到消息：气泡当场出现、左侧会话列表与未读状态实时刷新、对方看过之后「已读」自动消失，全程无需刷新。走独立推送服务的 WebSocket 长连接，不占用 WordPress 的 PHP 进程；连不上时自动降级为轮询，不会丢消息。默认关闭：需在后台「私信实时推送」分组填写推送服务地址与共享密钥后开启；不开启时前台零脚本、零请求，行为与原来完全一致。",
   "files": [
     {
